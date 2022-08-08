@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-- 🔭 I’m currently working on my master of SVG
+- 🔭 I’m currently working on my mastery of SVG
 - 👯 I would love to collaborate on cool web projects
 - 🤔 I’m looking for help with becoming part of the Scottish coding community
 - 💬 Ask me about typography (but only if you have a few hours spare)
