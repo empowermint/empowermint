@@ -1,0 +1,23 @@
+.mainMenu {
+  color: var(--highlight);
+  font-weight: 100;
+  letter-spacing: .08em;
+  position: fixed;
+  top: var(--pad-med);
+  right: var(--pad-med);
+}
+
+.mainMenu ul {
+  display: flex;
+  gap: var(--pad-x-small);
+  list-style: none;
+}
+
+.mainMenu li {
+  padding: .6em;
+  border-radius: .5em;
+}
+
+.featuredMenuItem {
+  border: 2px solid var(--highlight);
+}
