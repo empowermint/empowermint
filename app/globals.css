@@ -8,6 +8,11 @@
 
   --secondary-text: #00002B;
   --secondary-bg: #E6FEE7;
+
+  --pad-x-small: clamp(1rem, 1.5vw, 2rem);
+  --pad-small: clamp(1.5rem, 2vw, 3rem);
+  --pad-med: clamp(2rem, 3vw, 4rem);
+  --pad-lrg: clamp(4rem, 12vw, 8rem);
 }
 
 * {
@@ -28,4 +33,26 @@ body {
 body {
   color: var(--primary-text);
   background: var(--primary-bg)
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(60rem, 1fr) minmax(1rem, 1fr);
+  grid-row-gap: var(--pad-small);
+}
+
+section {
+  grid-column: 2 / -2;
+  padding-block: var(--pad-med);
+}
+
+/* UTILITIES */
+
+.colors-secondary {
+  color: var(--secondary-text);
+  background: var(--secondary-bg);
+}
+
+.full-width {
+  grid-column: 1 / -1;
 }
