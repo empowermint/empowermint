@@ -48,8 +48,8 @@
 }
 
 .menu_contact {
-  top: calc(var(--pad-med) + var(--menu-line-size) + 1.25em);
-  right: calc(var(--pad-med) - 1em);
+  top: calc(var(--pad-med) + var(--menu-line-size) + 2 * var(--pad-x-small));
+  right: calc(var(--pad-med) - 1.5em);
 }
 
 .menu_contact ul {
@@ -58,6 +58,8 @@
   align-items: flex-end;
 }
 
-.menu_contact a {
+.menu_contact svg {
   width: 2em;
+  height: 2em;
+  vertical-align: middle;
 }
