@@ -5,6 +5,7 @@
   position: fixed;
   top: var(--pad-med);
   right: var(--pad-med);
+  mix-blend-mode: difference;
 }
 
 .mainMenu ul {
@@ -13,11 +14,19 @@
   list-style: none;
 }
 
-.mainMenu li {
+.mainMenu a {
+  text-decoration: none;
+  transition: .2s ease-out;
   padding: .6em;
+  border-width: 2px;
   border-radius: .5em;
 }
 
+.mainMenu a:hover {
+  filter: brightness(1.2);
+  background-color: hsla(0, 0%, 100%, 20%);
+}
+
 .featuredMenuItem {
-  border: 2px solid var(--highlight);
+  border: solid var(--highlight);
 }

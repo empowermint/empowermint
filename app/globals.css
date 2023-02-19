@@ -13,6 +13,8 @@
   --pad-small: clamp(1.5rem, 2vw, 3rem);
   --pad-med: clamp(2rem, 3vw, 4rem);
   --pad-lrg: clamp(4rem, 12vw, 8rem);
+
+  scroll-behavior: smooth;
 }
 
 * {

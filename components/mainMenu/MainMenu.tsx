@@ -3,19 +3,23 @@ import styles from './mainMenu.module.css'
 export function MainMenu() {
 
   return (
-    <nav className={styles.mainMenu}>
+    <nav id='menu-main' className={styles.mainMenu}>
       <ul>
         <li>
-          Home
+          <a href='#section-hero'>Home</a>
         </li>
         <li>
-          Skills
+          <a href='#section-skills'>Skills</a>
         </li>
         <li>
-          Projects
+          <a href='#section-projects'>Projects</a>
         </li>
-        <li className={styles.featuredMenuItem}>
-          Contact
+        <li>
+          <a
+            href='#section-contact'
+            className={styles.featuredMenuItem}>
+              Contact
+          </a>
         </li>
       </ul>
     </nav>
