@@ -1,22 +1,19 @@
-.mainMenu {
+.menu {
   --menu-line-size: clamp(2rem, 18vw, 20rem);
-
   color: var(--highlight);
   font-weight: 100;
   letter-spacing: .08em;
-  position: fixed;
-  top: var(--pad-med);
-  right: calc(var(--pad-med) + var(--menu-line-size));
   mix-blend-mode: difference;
+  position: fixed;
 }
 
-.mainMenu ul {
+.menu ul {
+  list-style: none;
   display: flex;
   gap: var(--pad-x-small);
-  list-style: none;
 }
 
-.mainMenu a {
+.menu a {
   text-decoration: none;
   transition: .2s ease-out;
   padding: .6em;
@@ -24,7 +21,7 @@
   border-radius: .5em;
 }
 
-.mainMenu a:hover {
+.menu a:hover {
   filter: brightness(1.2);
   background-color: hsla(0, 0%, 100%, 20%);
 }
@@ -33,7 +30,12 @@
   border: solid var(--highlight);
 }
 
-.mainMenu::after {
+.menu_main {
+  top: var(--pad-med);
+  right: calc(var(--pad-med) + var(--menu-line-size));
+}
+
+.menu_main::after {
   content: '';
   width: var(--menu-line-size);
   height: var(--menu-line-size);
@@ -43,4 +45,19 @@
   position: fixed;
   right: var(--pad-med);
   top: calc(var(--pad-med) + 0.5em);
+}
+
+.menu_contact {
+  top: calc(var(--pad-med) + var(--menu-line-size) + 1.25em);
+  right: calc(var(--pad-med) - 1em);
+}
+
+.menu_contact ul {
+  flex-direction: column;
+  gap: var(--pad-med);
+  align-items: flex-end;
+}
+
+.menu_contact a {
+  width: 2em;
 }
