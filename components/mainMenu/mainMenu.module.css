@@ -1,10 +1,12 @@
 .mainMenu {
+  --menu-line-size: clamp(2rem, 18vw, 20rem);
+
   color: var(--highlight);
   font-weight: 100;
   letter-spacing: .08em;
   position: fixed;
   top: var(--pad-med);
-  right: var(--pad-med);
+  right: calc(var(--pad-med) + var(--menu-line-size));
   mix-blend-mode: difference;
 }
 
@@ -29,4 +31,16 @@
 
 .featuredMenuItem {
   border: solid var(--highlight);
+}
+
+.mainMenu::after {
+  content: '';
+  width: var(--menu-line-size);
+  height: var(--menu-line-size);
+  border: solid 2px var(--highlight);
+  border-bottom: none;
+  border-left: none;
+  position: fixed;
+  right: var(--pad-med);
+  top: calc(var(--pad-med) + 0.5em);
 }
