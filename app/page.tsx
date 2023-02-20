@@ -1,5 +1,6 @@
 import { Poppins } from '@next/font/google'
 import { SkillList } from '@/components/skillList/SkillList'
+import { ProjectsList } from '@/components/projectsList/ProjectsList' 
 
 const inter = Poppins({ weight: ['300'], style: ['normal'], subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Home() {
       </section>
       <section id='section-projects'>
         <h2>Projects</h2>
+        <ProjectsList />
       </section>
       <section id='section-contact'>
         <h2>Contact</h2>

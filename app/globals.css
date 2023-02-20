@@ -45,7 +45,7 @@ main {
 
 section {
   grid-column: 2 / -2;
-  padding-block: var(--pad-med);
+  padding-block: var(--pad-lrg);
 }
 
 /* UTILITIES */
