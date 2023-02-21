@@ -90,6 +90,21 @@ h6 {
   grid-column: 1 / -1;
 }
 
+.full-width-bleed {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(60rem, 1fr) minmax(1rem, 1fr);
+  grid-row-gap: var(--pad-small);
+}
+
+.full-width-bleed > * {
+  grid-column: 2 / -2;
+}
+
+.center {
+  text-align: center;
+}
+
 .visually-hidden {
   width: 0;
   height: 0;
