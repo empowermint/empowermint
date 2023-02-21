@@ -1,7 +1,7 @@
 import styles from './projectsList.module.css'
 import ProjectBlock from '../projectBlock/ProjectBlock';
 
-export async function ProjectsList() {
+export function ProjectsList() {
 
   return (
     <>

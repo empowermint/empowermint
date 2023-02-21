@@ -1,7 +1,16 @@
 import styles from './projectBlock.module.css'
 import { IconLink, IconCode } from '@tabler/icons-react'
+import { ReactNode } from 'react'
 
-export default function({ name, gitHubUrl, deployUrl, tags, children }) {
+interface projectBlock {
+  name: string,
+  gitHubUrl: string,
+  deployUrl: string,
+  tags: string[],
+  children?: ReactNode
+}
+
+export default function({ name, gitHubUrl, deployUrl, tags, children }: projectBlock) {
   return (
     <div className={styles.projectBlock}>
       <div className={styles.projectBlock_top}>
