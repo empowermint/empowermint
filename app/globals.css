@@ -48,6 +48,37 @@ section {
   padding-block: var(--pad-lrg);
 }
 
+/* TYPOGRAPHY */
+
+p {
+  margin-block: 1.1em;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-block-end: var(--pad-med);
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
 /* UTILITIES */
 
 .colors-secondary {
