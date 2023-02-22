@@ -11,11 +11,12 @@
 .skillList {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   gap: var(--pad-med);
   list-style: none;
   overflow-x: scroll;
-  width: 100%;
+  max-width: min-content;
+  margin: auto;
+  padding-inline: var(--pad-lrg);
 }
 
 .skillList li {
