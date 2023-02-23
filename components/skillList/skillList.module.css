@@ -14,9 +14,15 @@
   gap: var(--pad-med);
   list-style: none;
   overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
   max-width: min-content;
   margin: auto;
   padding-inline: var(--pad-lrg);
+}
+
+.skillList::-webkit-scrollbar {
+  display: none;
 }
 
 .skillList li {
