@@ -11,9 +11,13 @@
 }
 
 .projectBlock_top {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+
   border-block-end: 1px solid var(--highlight);
   padding-block-end: .5em;
   padding-inline-start: 1.2em;
@@ -27,7 +31,9 @@
 .projectBlock_links {
   list-style: none;
   display: flex;
+  flex-direction: row;
   gap: var(--pad-x-small);
+  height: min-content;
 }
 
 .projectBlock_links a {
@@ -44,6 +50,14 @@
   flex-direction: row;
   place-items: center;
   gap: .5em;
+}
+
+@media screen and (max-width: 500px) {
+  .projectBlock_links {
+    flex-direction: column;
+    place-items: end;
+    gap: .5rem;
+  }
 }
 
 .projectBlock_links a:hover{
@@ -63,5 +77,5 @@
   flex-wrap: wrap;
   gap: var(--pad-x-small);
   color: var(--highlight);
-  align-items: center;
+  font-size: clamp(.2rem, .2rem + 2vw, 1rem);
 }
