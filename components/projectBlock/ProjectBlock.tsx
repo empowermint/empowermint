@@ -14,15 +14,15 @@ export default function({ name, gitHubUrl, deployUrl, tags, children }: projectB
   return (
     <div className={styles.projectBlock}>
       <div className={styles.projectBlock_top}>
+        <div className={styles.projectBlock_links}>
+          <a href={deployUrl}><IconLink />Deploy</a>
+          <a href={gitHubUrl}><IconCode />Code</a>
+        </div>
         <ul className={styles.projectBlock_tags}>
           {tags.map((tag: string, i: number) => {
             return <li className={styles.tag} key={i + Date.now()}>{tag}</li>
           })}
         </ul>
-        <div className={styles.projectBlock_links}>
-          <a href={deployUrl}><IconLink />Deploy</a>
-          <a href={gitHubUrl}><IconCode />Code</a>
-        </div>
       </div>
       <h3>{name}</h3>
       {children}

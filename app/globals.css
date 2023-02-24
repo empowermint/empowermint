@@ -1,4 +1,6 @@
 :root {
+  --grid-base: minmax(1rem, 1fr) minmax(0, 60rem) minmax(1rem, 1fr);
+
   --primary-text: #E6FEE7;
   --primary-bg: #00002B;
   --primary-bg-inner: #2E0146;
@@ -39,7 +41,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: minmax(1rem, 1fr) minmax(60rem, 1fr) minmax(1rem, 1fr);
+  grid-template-columns: var(--grid-base);
   grid-row-gap: var(--pad-small);
 }
 
@@ -93,7 +95,7 @@ h6 {
 .full-width-bleed {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(1rem, 1fr) minmax(60rem, 1fr) minmax(1rem, 1fr);
+  grid-template-columns: var(--grid-base);
   grid-row-gap: var(--pad-small);
 }
 

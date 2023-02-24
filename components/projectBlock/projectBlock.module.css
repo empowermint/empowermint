@@ -11,13 +11,26 @@
 }
 
 .projectBlock_top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-items: end;
+  gap: var(--pad-x-small);
+
   border-block-end: 1px solid var(--highlight);
   padding-block-end: .5em;
-  padding-inline-start: 1.2em;
   margin-block-end: var(--pad-small);
+}
+
+@media screen and (max-width: 40rem) {
+  .projectBlock_top {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .projectBlock_links {
+    justify-self: start;
+  }
 }
 
 .projectBlock h3 {
@@ -27,7 +40,9 @@
 .projectBlock_links {
   list-style: none;
   display: flex;
+  flex-direction: row;
   gap: var(--pad-x-small);
+  height: min-content;
 }
 
 .projectBlock_links a {
@@ -61,7 +76,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
   gap: var(--pad-x-small);
   color: var(--highlight);
-  align-items: center;
+  font-size: clamp(.2rem, .2rem + 2vw, 1rem);
 }
