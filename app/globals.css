@@ -1,15 +1,15 @@
 :root {
   --grid-base: minmax(1rem, 1fr) minmax(0, 60rem) minmax(1rem, 1fr);
 
-  --primary-text: #E6FEE7;
-  --primary-bg: #00002B;
-  --primary-bg-inner: #2E0146;
+  --primary-text: #e6fee7;
+  --primary-bg: #00002b;
+  --primary-bg-inner: #2e0146;
 
-  --highlight: #DA99FD;
-  --highlight-strong: #99FD9D;
+  --highlight: #da99fd;
+  --highlight-strong: #99fd9d;
 
-  --secondary-text: #00002B;
-  --secondary-bg: #E6FEE7;
+  --secondary-text: #00002b;
+  --secondary-bg: #e6fee7;
 
   --pad-x-small: clamp(1rem, 1.5vw, 2rem);
   --pad-small: clamp(1.5rem, 2vw, 3rem);
@@ -36,7 +36,7 @@ body {
 
 body {
   color: var(--primary-text);
-  background: var(--primary-bg)
+  background: var(--primary-bg);
 }
 
 main {

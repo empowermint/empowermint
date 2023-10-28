@@ -1,8 +1,7 @@
 .menu {
   --menu-line-size: clamp(2rem, 18vw, 20rem);
-  color: var(--highlight);
   font-weight: 100;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
   mix-blend-mode: difference;
   position: static;
 }
@@ -14,11 +13,12 @@
 }
 
 .menu a {
+  color: var(--highlight);
   text-decoration: none;
-  transition: .2s ease-out;
-  padding: .6em;
+  transition: 0.2s ease-out;
+  padding: 0.6em;
   border-width: 2px;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 .menu a:hover {
@@ -50,7 +50,7 @@
   vertical-align: middle;
 }
 
-@media screen and (min-width: 80ch){
+@media screen and (min-width: 80ch) {
   .menu {
     position: fixed;
   }
@@ -62,7 +62,7 @@
   }
 
   .menu_main::after {
-    content: '';
+    content: "";
     width: var(--menu-line-size);
     height: var(--menu-line-size);
     border: solid 2px var(--highlight);
