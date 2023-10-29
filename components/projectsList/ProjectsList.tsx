@@ -12,7 +12,6 @@ export function ProjectsList() {
           "React",
           "Next.js",
           "TypeScript",
-          "JavaScript",
           "HTML",
           "SCSS",
           "CSS",
@@ -21,7 +20,7 @@ export function ProjectsList() {
       >
         <p>Marketing website for a thriving game community in Edinburgh</p>
         <p>
-          Uses an OAUTH API to access and render events information from the
+          Uses the Discord API to access and render events information from the
           club's Discord server
         </p>
       </ProjectBlock>
