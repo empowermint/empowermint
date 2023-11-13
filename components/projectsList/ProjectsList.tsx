@@ -5,6 +5,24 @@ export function ProjectsList() {
   return (
     <>
       <ProjectBlock
+        name="Git Mountains"
+        gitHubUrl="https://github.com/empowermint/git-mountains"
+        deployUrl="https://git-mountains.netlify.app/empowermint"
+        tags={[
+          "React Three Fibre",
+          "Three.js",
+          "React",
+          "Next.js",
+          "Tailwind",
+          "CI/CD",
+        ]}
+      >
+        <p>
+          A web app that visualises a GitGub user's contribution history as a
+          three-dimensional mountain range.
+        </p>
+      </ProjectBlock>
+      <ProjectBlock
         name="Edinburgh Indie Gamers"
         gitHubUrl="https://github.com/empowermint/edinburgh-indie-gamers"
         deployUrl="https://edinburghindiegamers.com/"
