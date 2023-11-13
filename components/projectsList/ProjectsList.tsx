@@ -45,7 +45,7 @@ export function ProjectsList() {
       <ProjectBlock
         name="Conway's Disco of Life"
         gitHubUrl="https://github.com/empowermint/conways-game-of-life"
-        deployUrl="empowermint.github.io/conways-game-of-life/"
+        deployUrl="https://empowermint.github.io/conways-game-of-life/"
         tags={["JavaScript", "CSS", "HTML"]}
       >
         <p>
