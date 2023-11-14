@@ -12,6 +12,7 @@ export function ProjectsList() {
           "React Three Fibre",
           "Three.js",
           "React",
+          "GraphQL",
           "Next.js",
           "Tailwind",
           "CI/CD",
