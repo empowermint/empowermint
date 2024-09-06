@@ -1,9 +1,8 @@
 ### Hi there 👋
 
-- 💼 I'm a software engineer at DC Thomson. I build event-sourcing solutions in the cloud!
-- 🔭 I’m currently working on my mastery of serverless architecuture and components
+- 💼 I'm a full-stack software developer at KPV Lab, where I build data-visualisation and knowledge exploration tools
+- 🔭 My current side project is a musical instrument made of JavaScript
 - 👯 I would love to collaborate on code projects at the intersection of code and graphic design
-- 🤔 I’m looking for help with becoming part of the Scottish coding community
 - 💬 Ask me about typography (but only if you have a few hours to spare)
 - 📫 How to reach me: j.t.harding@gmail.com
 - 😄 Pronouns: he/him
