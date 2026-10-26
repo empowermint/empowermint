@@ -4,7 +4,7 @@
 - 🔭 My current side project is a musical instrument made of JavaScript
 - 👯 I would love to collaborate on code projects at the intersection of code and graphic design
 - 💬 Ask me about typography (but only if you have a few hours to spare)
-- 📫 How to reach me: j.t.harding@gmail.com
+- 📫 How to reach me: james@james-t-harding.com
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: When I was 12, I programmed an imaginary friend in Unix shell
 
